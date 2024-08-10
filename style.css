@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #eeedc0;
+  background-color: #13323d;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-image: url("./assets/ane-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 117, 164, 0.94);
+  width: 300px;
+  height: 650px;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-top: 16px;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.perfil-foto {
+  border-radius: 50%;
+  width: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.efeito {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  color: #eeedc0;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgba(1, 44, 50, 0.82);
+  margin: 8px;
+}
+
+.link:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition-delay: 100ms;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translatey(-100%);
+  transition: all 1.2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translatey(0);
+  transition: all 1.2s;
+}
+
+.efeito :nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.efeito :nth-child(3) {
+  transition-delay: 700ms;
+}
+
+.efeito :nth-child(4) {
+  transition-delay: 1000ms;
+}
+
+.efeito :nth-child(5) {
+  transition-delay: 1300ms;
+}
